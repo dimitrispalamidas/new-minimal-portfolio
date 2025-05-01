@@ -68,7 +68,7 @@ export function Resume() {
           <div className="h-1 w-20 bg-gray-200 dark:bg-gray-700 mx-auto mb-8"></div>
           <p className="text-gray-600 dark:text-gray-300 mb-8">{t("resume.description")}</p>
           <Button asChild className="rounded-full gap-2">
-            <a href="#" download>
+            <a href="/Dimitris Palamidas Resume.pdf" download>
               <Download className="h-4 w-4" />
               {t("resume.download")}
             </a>
