@@ -160,13 +160,19 @@ const translations = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-export function LanguageProvider({ children }) {
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("en")
+  const [isClient, setIsClient] = useState(false)
 
   // Function to translate text
   const t = (key: string): string => {
-    return translations[language][key] || key
+    return translations[language][key as keyof typeof translations[typeof language]] || key
   }
+
+  // Set isClient to true once component mounts
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   // Save language preference to localStorage
   useEffect(() => {
@@ -184,6 +190,11 @@ export function LanguageProvider({ children }) {
       }
     }
   }, [])
+
+  // Don't render children until after hydration
+  if (!isClient) {
+    return null
+  }
 
   return <LanguageContext.Provider value={{ language, setLanguage, t }}>{children}</LanguageContext.Provider>
 }
