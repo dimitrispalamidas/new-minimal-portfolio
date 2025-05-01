@@ -24,33 +24,6 @@ export function Projects() {
       demoLink: "#",
       githubLink: "#",
     },
-    {
-      title: "Personal Portfolio",
-      description: "A modern portfolio website built with Next.js and TailwindCSS.",
-      image: "/placeholder.svg?height=600&width=800",
-      category: t("projects.landing"),
-      tags: ["Next.js", "React", "TailwindCSS"],
-      demoLink: "https://www.dimitrispalamidas.com",
-      githubLink: "https://github.com/dimitrispalamidas",
-    },
-    {
-      title: "E-commerce Platform",
-      description: "An e-commerce platform with product filtering and cart functionality.",
-      image: "/placeholder.svg?height=600&width=800",
-      category: t("projects.ecommerce"),
-      tags: ["React", "Node.js", "MongoDB"],
-      demoLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "Mobile App",
-      description: "A cross-platform mobile application built with React Native.",
-      image: "/placeholder.svg?height=600&width=800",
-      category: t("projects.webapp"),
-      tags: ["React Native", "JavaScript", "API Integration"],
-      demoLink: "#",
-      githubLink: "#",
-    },
   ]
 
   const filteredProjects =
