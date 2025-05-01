@@ -34,13 +34,6 @@ export function Footer() {
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link
-              href="https://www.dimitrispalamidas.com"
-              target="_blank"
-              className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-            >
-              <span className="text-sm font-medium">Portfolio</span>
-            </Link>
           </div>
         </div>
       </div>

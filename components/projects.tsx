@@ -16,13 +16,22 @@ export function Projects() {
 
   const projects = [
     {
-      title: "CloudFin Web Application",
-      description: "A responsive financial web application built with Angular.",
-      image: "/placeholder.svg?height=600&width=800",
+      title: "Duolingo Clone",
+      description: "A responsive language learning web application.",
+      image: "/duolingo.png",
       category: t("projects.webapp"),
-      tags: ["Angular", "TypeScript", "CSS"],
-      demoLink: "#",
-      githubLink: "#",
+      tags: ["React", "Next.js", "Tailwind CSS"],
+      demoLink: "https://duolingo-clone-nu.vercel.app/",
+      githubLink: "https://github.com/dimitrispalamidas/duolingo-clone",
+    },
+    {
+      title: "Car Dealership Website",
+      description: "A responsive car dealership website with admin panel and contact form.",
+      image: "/autostylecars.png",
+      category: t("projects.webapp"),
+      tags: ["React", "Next.js", "Tailwind CSS"],
+      demoLink: "https://autostylecars.vercel.app/",
+      githubLink: "https://github.com/dimitrispalamidas/v0-car-website-clone",
     },
   ]
 

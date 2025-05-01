@@ -16,7 +16,7 @@ const translations = {
     "hero.greeting": "Hi, I'm",
     "hero.role": "Front-End Developer",
     "hero.description":
-      "I bring foundational knowledge of HTML, CSS, JavaScript, React, Next.js, Angular and TypeScript with a strong passion for creating well-designed, responsive websites and applications.",
+      "I bring foundational knowledge of HTML, CSS, JavaScript, React and Angular with a strong passion for creating well-designed, responsive websites and applications.",
     "hero.contact": "Get in touch",
     "hero.work": "View my work",
 
@@ -26,7 +26,7 @@ const translations = {
     "about.paragraph1":
       "As a Software Engineer, I bring foundational knowledge of HTML, CSS, JavaScript, React, Next.js, Angular and TypeScript with a strong passion for creating well-designed, responsive websites and applications. I am eager to apply my skills and collaborate with experienced professionals to contribute to web development projects.",
     "about.paragraph2":
-      "Since completing my coding boot camp 'Coding Factory' at Athens University of Economics and Business I have been actively working on a variety of personal projects to hone my skills.",
+      "Since completing my coding boot camp 'Coding Factory' at Athens University of Economics and Business I have been actively working on a variety of personal projects and freelance assignments to hone my skills, delivering custom web solutions for clients.",
     "about.paragraph3":
       "Currently working as a Front End Developer at CloudFin in Athens, Greece, where I develop and maintain user interfaces using Angular.",
 
@@ -88,7 +88,7 @@ const translations = {
     "hero.greeting": "Γεια, είμαι ο",
     "hero.role": "Front-End Developer",
     "hero.description":
-      "Διαθέτω θεμελιώδεις γνώσεις HTML, CSS, JavaScript, React, Next.js, Angular και TypeScript με έντονο πάθος για τη δημιουργία καλοσχεδιασμένων, responsive ιστοσελίδων και εφαρμογών.",
+      "Διαθέτω θεμελιώδεις γνώσεις HTML, CSS, JavaScript, React και Angular με έντονο πάθος για τη δημιουργία καλοσχεδιασμένων, responsive ιστοσελίδων και εφαρμογών.",
     "hero.contact": "Επικοινωνήστε",
     "hero.work": "Δείτε τη δουλειά μου",
 
@@ -98,7 +98,7 @@ const translations = {
     "about.paragraph1":
       "Ως Μηχανικός Λογισμικού, διαθέτω θεμελιώδεις γνώσεις HTML, CSS, JavaScript, React, Next.js, Angular και TypeScript με έντονο πάθος για τη δημιουργία καλοσχεδιασμένων, responsive ιστοσελίδων και εφαρμογών. Είμαι πρόθυμος να εφαρμόσω τις δεξιότητές μου και να συνεργαστώ με έμπειρους επαγγελματίες για να συνεισφέρω σε έργα ανάπτυξης ιστοσελίδων.",
     "about.paragraph2":
-      "Από την ολοκλήρωση του coding boot camp 'Coding Factory' στο Οικονομικό Πανεπιστήμιο Αθηνών, εργάζομαι ενεργά σε διάφορα προσωπικά projects για να βελτιώσω τις δεξιότητές μου.",
+      "Από την ολοκλήρωση του coding boot camp 'Coding Factory' στο Οικονομικό Πανεπιστήμιο Αθηνών, εργάζομαι ενεργά σε διάφορα προσωπικά projects και freelance αναθέσεις για να βελτιώσω τις δεξιότητές μου, παρέχοντας εξατομικευμένες web λύσεις σε πελάτες.",
     "about.paragraph3":
       "Αυτή τη στιγμή εργάζομαι ως Front End Developer στην CloudFin στην Αθήνα, όπου αναπτύσσω και συντηρώ διεπαφές χρήστη χρησιμοποιώντας Angular.",
 

@@ -17,8 +17,6 @@ export function Skills() {
     { name: "Angular", level: 85 },
     { name: "React Native", level: 75 },
     { name: "TailwindCSS", level: 90 },
-    { name: "Node.js", level: 75 },
-    { name: "SQL/NoSQL", level: 70 },
     { name: "Git/GitHub", level: 80 },
   ]
 
