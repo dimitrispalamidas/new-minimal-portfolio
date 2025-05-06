@@ -2,10 +2,19 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Moon, Sun, Menu, X, Globe } from "lucide-react"
+import Image from "next/image"
+import { Moon, Sun, Menu, X, Globe, Settings } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { useLanguage } from "./language-provider"
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+} from "@/components/ui/dropdown-menu"
+import { Switch } from "@/components/ui/switch"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -43,9 +52,16 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-tight">
-          <span className="text-gray-900 dark:text-white">Portfolio</span>
-          <span className="text-gray-500 dark:text-gray-400">.</span>
+        <Link href="/">
+          {mounted && (
+            <Image
+              src={theme === "dark" ? "/logo-gray2.png" : "/logo-black2.png"}
+              alt="Dimitris Palamidas Logo"
+              width={100}
+              height={100}
+              priority
+            />
+          )}
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">
@@ -83,17 +99,46 @@ export function Header() {
           </nav>
 
           <div className="flex items-center space-x-2">
-            {mounted && (
-              <Button variant="ghost" size="icon" onClick={toggleTheme} className="rounded-full">
-                {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-                <span className="sr-only">Toggle theme</span>
-              </Button>
-            )}
-
-            <Button variant="ghost" size="icon" onClick={toggleLanguage} className="rounded-full">
-              <Globe className="h-5 w-5" />
-              <span className="sr-only">Toggle language</span>
-            </Button>
+            {/* Settings Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full" aria-label="Settings">
+                  <Settings className="h-5 w-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-44">
+                {/* Language */}
+                <div className="px-2 py-1.5 text-xs font-semibold text-muted-foreground">Language</div>
+                <DropdownMenuItem
+                  onClick={() => setLanguage("en")}
+                  className={language === "en" ? "font-bold text-primary" : ""}
+                >
+                  {language === "en" && <span className="mr-2">✓</span>} EN
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setLanguage("el")}
+                  className={language === "el" ? "font-bold text-primary" : ""}
+                >
+                  {language === "el" && <span className="mr-2">✓</span>} GR
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                {/* Theme */}
+                <div className="px-2 py-1.5 text-xs font-semibold text-muted-foreground">Theme</div>
+                <DropdownMenuItem asChild>
+                  <div className="flex items-center justify-between w-full">
+                    <span className="flex items-center gap-2">
+                      {theme === "dark" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+                      {theme === "dark" ? "Dark" : "Light"}
+                    </span>
+                    <Switch
+                      checked={theme === "dark"}
+                      onCheckedChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+                      aria-label="Toggle theme"
+                    />
+                  </div>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
 
@@ -105,10 +150,34 @@ export function Header() {
             </Button>
           )}
 
-          <Button variant="ghost" size="icon" onClick={toggleLanguage} className="mr-2 rounded-full">
-            <Globe className="h-5 w-5" />
-            <span className="sr-only">Toggle language</span>
-          </Button>
+          {/* Language Switcher */}
+          <div className="flex items-center border rounded-full px-2 py-1 bg-secondary/60 dark:bg-secondary/30">
+            <button
+              onClick={() => setLanguage("en")}
+              className={`px-2 text-sm font-semibold transition-colors ${
+                language === "en"
+                  ? "text-primary underline underline-offset-4"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              aria-current={language === "en"}
+              aria-label="Switch to English"
+            >
+              EN
+            </button>
+            <span className="mx-1 text-muted-foreground">|</span>
+            <button
+              onClick={() => setLanguage("el")}
+              className={`px-2 text-sm font-semibold transition-colors ${
+                language === "el"
+                  ? "text-primary underline underline-offset-4"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              aria-current={language === "el"}
+              aria-label="Switch to Greek"
+            >
+              GR
+            </button>
+          </div>
 
           <Button
             variant="ghost"
