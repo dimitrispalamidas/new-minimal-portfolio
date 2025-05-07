@@ -26,12 +26,21 @@ export function Projects() {
     },
     {
       title: "Car Dealership Website",
-      description: "A responsive car dealership website with admin panel and contact form.",
+      description: "A car dealership website with admin panel and contact form.",
       image: "/autostylecars.png",
       category: t("projects.webapp"),
       tags: ["React", "Next.js", "Tailwind CSS"],
       demoLink: "https://autostylecars.vercel.app/",
       githubLink: "https://github.com/dimitrispalamidas/v0-car-website-clone",
+    },
+    {
+      title: "Messenger App",
+      description: "A responsive live chat application.",
+      image: "/messenger.png",
+      category: t("projects.webapp"),
+      tags: ["React", "Next.js", "Tailwind CSS"],
+      demoLink: "https://messenger-clone-pi-tawny.vercel.app/",
+      githubLink: "https://github.com/dimitrispalamidas/messenger-clone",
     },
   ]
 
