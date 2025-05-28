@@ -30,7 +30,7 @@ export function Projects() {
       image: "/autostylecars.png",
       category: t("projects.webapp"),
       tags: ["React", "Next.js", "Tailwind CSS"],
-      demoLink: "https://autostylecars.vercel.app/",
+      demoLink: "https://car-website-coral-alpha.vercel.app/",
       githubLink: "https://github.com/dimitrispalamidas/v0-car-website-clone",
     },
     {

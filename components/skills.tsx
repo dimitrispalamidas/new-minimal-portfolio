@@ -8,16 +8,15 @@ export function Skills() {
   const { t } = useLanguage()
 
   const skills = [
-    { name: "HTML5", level: 90 },
-    { name: "CSS", level: 85 },
-    { name: "JavaScript", level: 85 },
+    { name: "HTML5", level: 100 },
+    { name: "CSS", level: 90 },
+    { name: "JavaScript", level: 90 },
     { name: "TypeScript", level: 80 },
-    { name: "React.js", level: 85 },
+    { name: "Angular", level: 95 },
+    { name: "React.js", level: 80 },
+    { name: "React Native", level: 70 },
     { name: "Next.js", level: 80 },
-    { name: "Angular", level: 85 },
-    { name: "React Native", level: 75 },
     { name: "TailwindCSS", level: 90 },
-    { name: "Git/GitHub", level: 80 },
   ]
 
   const categories = [
@@ -58,7 +57,7 @@ export function Skills() {
           <p className="text-gray-600 dark:text-gray-300">{t("skills.description")}</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {categories.map((category, index) => (
             <motion.div
               key={index}
@@ -75,8 +74,8 @@ export function Skills() {
           ))}
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+        <div className="mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-8">
             {skills.map((skill, index) => (
               <motion.div
                 key={index}
