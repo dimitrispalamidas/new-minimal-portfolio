@@ -21,7 +21,7 @@ export function Projects() {
       image: "/duolingo.png",
       category: t("projects.webapp"),
       tags: ["React", "Next.js", "Tailwind CSS"],
-      demoLink: "https://duolingo-clone-nu.vercel.app/",
+      demoLink: "https://duolingo-clone-eight-omega.vercel.app/",
       githubLink: "https://github.com/dimitrispalamidas/duolingo-clone",
     },
     {
