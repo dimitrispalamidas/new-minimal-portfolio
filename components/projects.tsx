@@ -39,7 +39,7 @@ export function Projects() {
       image: "/messenger.png",
       category: t("projects.webapp"),
       tags: ["React", "Next.js", "Tailwind CSS"],
-      demoLink: "https://messenger-clone-pi-tawny.vercel.app/",
+      demoLink: "https://messenger-clone-eight-ruddy.vercel.app/",
       githubLink: "https://github.com/dimitrispalamidas/messenger-clone",
     },
   ]
