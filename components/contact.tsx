@@ -16,7 +16,7 @@ export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
+    phone: "",
     message: "",
   })
 
@@ -40,7 +40,7 @@ export function Contact() {
         {
           from_name: formData.name,
           from_email: formData.email,
-          subject: formData.subject,
+          phone: formData.phone,
           message: formData.message,
           to_email,
         },
@@ -54,7 +54,7 @@ export function Contact() {
       })
       
       // Reset form
-      setFormData({ name: "", email: "", subject: "", message: "" })
+      setFormData({ name: "", email: "", phone: "", message: "" })
     } catch (error) {
       console.error('Error sending email:', error)
       toast({
@@ -199,15 +199,16 @@ export function Contact() {
                 </div>
               </div>
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  {t("contact.subject")}
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  {t("contact.phone")}
                 </label>
                 <Input
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
                   onChange={handleChange}
-                  placeholder={t("contact.subject")}
+                  placeholder={t("contact.phone")}
                   required
                 />
               </div>
