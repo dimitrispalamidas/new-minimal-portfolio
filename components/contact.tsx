@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/hooks/use-toast"
 import { useLanguage } from "./language-provider"
+import emailjs from '@emailjs/browser'
 
 export function Contact() {
   const { t } = useLanguage()
@@ -19,21 +20,51 @@ export function Contact() {
     message: "",
   })
 
-  const handleChange = (e) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log(formData)
-    toast({
-      title: t("contact.success"),
-      description: t("contact.success.desc"),
-    })
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    setIsSubmitting(true)
+
+    try {
+      const to_email = "palamidas.dim@gmail.com";
+
+      await emailjs.send(
+        'service_4w6lyb6',
+        'template_cq4jwe9',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email,
+        },
+        'HdcYJYH7f32HfwcPg'
+      )
+
+      toast({
+        title: t("contact.success"),
+        description: t("contact.success.desc"),
+        variant: "success",
+      })
+      
+      // Reset form
+      setFormData({ name: "", email: "", subject: "", message: "" })
+    } catch (error) {
+      console.error('Error sending email:', error)
+      toast({
+        title: t("contact.error"),
+        description: t("contact.error.desc"),
+        variant: "destructive",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -177,9 +208,9 @@ export function Contact() {
                   required
                 />
               </div>
-              <Button type="submit" className="w-full gap-2">
+              <Button type="submit" className="w-full gap-2" disabled={isSubmitting}>
                 <Send className="h-4 w-4" />
-                {t("contact.send")}
+                {isSubmitting ? t("contact.sending") : t("contact.send")}
               </Button>
             </form>
           </motion.div>

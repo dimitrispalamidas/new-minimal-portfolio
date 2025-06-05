@@ -74,6 +74,7 @@ const translations = {
     "contact.subject": "Subject",
     "contact.message": "Message",
     "contact.send": "Send Message",
+    "contact.sending": "Sending...",
     "contact.success": "Message sent!",
     "contact.success.desc": "Thank you for your message. I'll get back to you soon.",
 
@@ -147,6 +148,7 @@ const translations = {
     "contact.subject": "Θέμα",
     "contact.message": "Μήνυμα",
     "contact.send": "Αποστολή Μηνύματος",
+    "contact.sending": "Αποστολή...",
     "contact.success": "Το μήνυμα εστάλη!",
     "contact.success.desc": "Ευχαριστώ για το μήνυμά σας. Θα επικοινωνήσω σύντομα μαζί σας.",
 

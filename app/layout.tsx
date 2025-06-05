@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/components/language-provider"
 import { LanguagePopup } from "@/components/language-popup"
 import { ReactNode } from "react"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <LanguageProvider>
             <LanguagePopup />
             {children}
+            <Toaster />
           </LanguageProvider>
         </ThemeProvider>
       </body>
