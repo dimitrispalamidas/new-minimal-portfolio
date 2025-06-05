@@ -99,7 +99,12 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{t("contact.email")}</h3>
-                  <p className="text-gray-600 dark:text-gray-300">palamidas.dim@gmail.com</p>
+                  <a 
+                    href="mailto:palamidas.dim@gmail.com"
+                    className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                  >
+                    palamidas.dim@gmail.com
+                  </a>
                 </div>
               </motion.div>
 
@@ -117,7 +122,12 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{t("contact.phone")}</h3>
-                  <p className="text-gray-600 dark:text-gray-300">+30 6978916927</p>
+                  <a 
+                    href="tel:+306978916927"
+                    className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                  >
+                    +30 6978916927
+                  </a>
                 </div>
               </motion.div>
 
@@ -135,7 +145,14 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{t("contact.location")}</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Athens, Greece</p>
+                  <a 
+                    href="https://www.google.com/maps?q=Athens,Greece"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                  >
+                    Athens, Greece
+                  </a>
                 </div>
               </motion.div>
             </div>
