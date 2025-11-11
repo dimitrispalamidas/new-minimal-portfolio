@@ -40,11 +40,11 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/">
+        <Link href="/" aria-label="Dimitris Palamidas - React & Angular Developer Homepage">
           {mounted && (
             <Image
               src={theme === "dark" ? "/logo-gray2.png" : "/logo-black2.png"}
-              alt="Dimitris Palamidas Logo"
+              alt="Dimitris Palamidas - React Developer & Angular Developer Logo"
               width={100}
               height={100}
               priority

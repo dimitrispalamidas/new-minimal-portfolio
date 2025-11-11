@@ -21,18 +21,22 @@ export function Footer() {
             <Link
               href="https://github.com/dimitrispalamidas"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dimitris Palamidas GitHub Profile - React & Angular Developer"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             >
               <Github className="h-5 w-5" />
-              <span className="sr-only">GitHub</span>
+              <span className="sr-only">GitHub - Dimitris Palamidas</span>
             </Link>
             <Link
               href="https://linkedin.com/in/dimitris-palamidas"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dimitris Palamidas LinkedIn Profile - React & Angular Developer"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             >
               <Linkedin className="h-5 w-5" />
-              <span className="sr-only">LinkedIn</span>
+              <span className="sr-only">LinkedIn - Dimitris Palamidas</span>
             </Link>
           </div>
         </div>

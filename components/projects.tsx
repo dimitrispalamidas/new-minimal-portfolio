@@ -88,7 +88,7 @@ export function Projects() {
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src={project.image || "/placeholder.svg"}
-                  alt={project.title}
+                  alt={`${project.title} - React project by Dimitris Palamidas`}
                   width={800}
                   height={600}
                   className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"

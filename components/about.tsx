@@ -34,7 +34,7 @@ export function About() {
             <div className="relative h-full w-full overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-800">
               <Image
                 src="/dimitrispalamidas.jpg"
-                alt="Dimitris Palamidas"
+                alt="Dimitris Palamidas - Professional React Developer and Angular Developer in Athens, Greece"
                 width={600}
                 height={600}
                 priority

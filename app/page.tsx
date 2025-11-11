@@ -11,7 +11,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <Header />
-      <main>
+      <main itemScope itemType="https://schema.org/Person">
+        <meta itemProp="name" content="Dimitris Palamidas" />
+        <meta itemProp="jobTitle" content="React Developer & Angular Developer" />
+        <meta itemProp="description" content="Experienced React Developer and Angular Developer specializing in modern web applications" />
         <Hero />
         <About />
         <Skills />

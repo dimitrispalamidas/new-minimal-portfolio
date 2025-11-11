@@ -1,0 +1,13 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths if any
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://dimitrispalamidas.com/sitemap.xml
+
+# Crawl-delay (optional, remove if not needed)
+# Crawl-delay: 1
+
