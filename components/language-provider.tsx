@@ -16,7 +16,7 @@ const translations = {
     "hero.greeting": "Hi, I'm",
     "hero.role": "Front-End Developer",
     "hero.description":
-      "I bring foundational knowledge of HTML, CSS, JavaScript, React and Angular with a strong passion for creating well-designed, responsive websites and applications.",
+      "Turning ideas into digital reality.",
     "hero.contact": "Get in touch",
     "hero.work": "View my work",
 
@@ -24,11 +24,11 @@ const translations = {
     "about.title": "About Me",
     "about.subtitle": "Who I Am",
     "about.paragraph1":
-      "As a Software Engineer, I bring foundational knowledge of HTML, CSS, JavaScript, React, Next.js, Angular and TypeScript with a strong passion for creating well-designed, responsive websites and applications. I am eager to apply my skills and collaborate with experienced professionals to contribute to web development projects.",
+      "As a Front-End Developer, I specialize in building modern, scalable web applications using React, Next.js, Angular, and TypeScript. I focus on creating intuitive user experiences with clean, maintainable code and attention to performance and accessibility.",
     "about.paragraph2":
-      "Since completing my coding boot camp 'Coding Factory' at Athens University of Economics and Business I have been actively working on a variety of personal projects and freelance assignments to hone my skills, delivering custom web solutions for clients.",
+      "With experience spanning freelance projects and professional development roles, I've delivered custom web solutions for diverse clients and contributed to enterprise-level applications. My approach combines technical expertise with strong problem-solving skills and a keen eye for design.",
     "about.paragraph3":
-      "Currently working as a Front End Developer at CloudFin in Athens, Greece, where I develop and maintain user interfaces using Angular.",
+      "Currently working as a Front End Developer at CloudFin in Athens, Greece, where I develop and maintain complex user interfaces using Angular, collaborating with cross-functional teams to deliver high-quality solutions.",
 
     // Skills
     "skills.title": "My Skills",
@@ -89,7 +89,7 @@ const translations = {
     "hero.greeting": "Γεια, είμαι ο",
     "hero.role": "Front-End Developer",
     "hero.description":
-      "Διαθέτω θεμελιώδεις γνώσεις HTML, CSS, JavaScript, React και Angular με έντονο πάθος για τη δημιουργία καλοσχεδιασμένων, responsive ιστοσελίδων και εφαρμογών.",
+      "Μετατρέπω ιδέες σε ψηφιακή πραγματικότητα.",
     "hero.contact": "Επικοινωνήστε",
     "hero.work": "Δείτε τη δουλειά μου",
 
@@ -97,11 +97,11 @@ const translations = {
     "about.title": "Σχετικά με εμένα",
     "about.subtitle": "Ποιος είμαι",
     "about.paragraph1":
-      "Ως Μηχανικός Λογισμικού, διαθέτω θεμελιώδεις γνώσεις HTML, CSS, JavaScript, React, Next.js, Angular και TypeScript με έντονο πάθος για τη δημιουργία καλοσχεδιασμένων, responsive ιστοσελίδων και εφαρμογών. Είμαι πρόθυμος να εφαρμόσω τις δεξιότητές μου και να συνεργαστώ με έμπειρους επαγγελματίες για να συνεισφέρω σε έργα ανάπτυξης ιστοσελίδων.",
+      "Ως Front-End Developer, ειδικεύομαι στην ανάπτυξη σύγχρονων, επεκτάσιμων web εφαρμογών χρησιμοποιώντας React, Next.js, Angular και TypeScript. Εστιάζω στη δημιουργία διαισθητικών εμπειριών χρήστη με καθαρό, συντηρήσιμο κώδικα και προσοχή στην απόδοση και την προσβασιμότητα.",
     "about.paragraph2":
-      "Από την ολοκλήρωση του coding boot camp 'Coding Factory' στο Οικονομικό Πανεπιστήμιο Αθηνών, εργάζομαι ενεργά σε διάφορα προσωπικά projects και freelance αναθέσεις για να βελτιώσω τις δεξιότητές μου, παρέχοντας εξατομικευμένες web λύσεις σε πελάτες.",
+      "Με εμπειρία που εκτείνεται σε freelance projects και επαγγελματικούς ρόλους ανάπτυξης, έχω παραδώσει εξατομικευμένες web λύσεις για ποικίλους πελάτες και συνεισφέρει σε enterprise εφαρμογές. Η προσέγγισή μου συνδυάζει τεχνική εξειδίκευση με ισχυρές δεξιότητες επίλυσης προβλημάτων και έντονη αίσθηση σχεδιασμού.",
     "about.paragraph3":
-      "Αυτή τη στιγμή εργάζομαι ως Front End Developer στην CloudFin στην Αθήνα, όπου αναπτύσσω και συντηρώ διεπαφές χρήστη χρησιμοποιώντας Angular.",
+      "Αυτή τη στιγμή εργάζομαι ως Front End Developer στην CloudFin στην Αθήνα, όπου αναπτύσσω και συντηρώ σύνθετες διεπαφές χρήστη χρησιμοποιώντας Angular, συνεργαζόμενος με cross-functional ομάδες για την παράδοση υψηλής ποιότητας λύσεων.",
 
     // Skills
     "skills.title": "Οι Δεξιότητές μου",

@@ -33,7 +33,7 @@ export function About() {
             <div className="absolute inset-0 border-2 border-gray-200 dark:border-gray-700 rounded-lg transform translate-x-4 translate-y-4"></div>
             <div className="relative h-full w-full overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-800">
               <Image
-                src="/me-2.jpeg"
+                src="/dimitrispalamidas.jpg"
                 alt="Dimitris Palamidas"
                 width={600}
                 height={600}
