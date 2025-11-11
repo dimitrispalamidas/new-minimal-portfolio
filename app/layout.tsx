@@ -5,6 +5,7 @@ import { LanguageProvider } from "@/components/language-provider"
 import { ReactNode } from "react"
 import { Toaster } from "@/components/ui/toaster"
 import type { Metadata } from 'next'
+// import { GoogleAnalytics } from "./google-analytics" // Uncomment when you get your GA ID
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -74,10 +75,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Add your verification codes here when you get them
-    // google: 'your-google-verification-code',
-    // yandex: 'your-yandex-verification-code',
-    // bing: 'your-bing-verification-code',
+    google: 'r-jB5H88Xpu4DdV-CdFwBga0675VQ-fiMFQ91_KzJLE',
   },
 }
 
@@ -134,6 +132,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className={inter.className} suppressHydrationWarning>
+        {/* Uncomment and add your GA measurement ID when ready */}
+        {/* <GoogleAnalytics measurementId="G-XXXXXXXXXX" /> */}
+        
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <LanguageProvider>
             {children}
