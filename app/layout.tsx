@@ -12,6 +12,11 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Dimitris Palamidas | React Developer & Angular Developer | Front-End Developer Portfolio",
   description: "Dimitris Palamidas - Experienced React Developer and Angular Developer specializing in modern web applications. Front-End Developer with expertise in TypeScript, Next.js, and responsive UI/UX design. Based in Athens, Greece.",
+  icons: {
+    icon: '/logo-gray.png',
+    shortcut: '/logo-gray.png',
+    apple: '/logo-gray.png',
+  },
   keywords: [
     "Dimitris Palamidas",
     "React Developer",
