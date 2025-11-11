@@ -15,17 +15,17 @@ export function Resume() {
       period: language === "en" ? "11/2024 - Present" : "11/2024 - Παρόν",
       description:
         language === "en"
-          ? "Develop and maintain user interfaces using Angular to create responsive web applications. Collaborate with cross-functional teams to implement innovative solutions. Ensure code quality and performance by writing clean, maintainable code."
-          : "Ανάπτυξη και συντήρηση διεπαφών χρήστη με χρήση Angular για τη δημιουργία responsive web εφαρμογών. Συνεργασία με διεπιστημονικές ομάδες για την υλοποίηση καινοτόμων λύσεων. Διασφάλιση της ποιότητας και της απόδοσης του κώδικα με τη συγγραφή καθαρού, συντηρήσιμου κώδικα.",
+          ? "Building web applications for financial systems—creating features for purchase orders, invoicing, and document management. Working with an awesome team to deliver solutions that help businesses run smoother."
+          : "Δημιουργία web εφαρμογών για οικονομικά συστήματα—φτιάχνοντας features για παραγγελίες, τιμολόγηση και διαχείριση εγγράφων. Συνεργασία με μια υπέροχη ομάδα για να παραδίδουμε λύσεις που βοηθούν τις επιχειρήσεις να τρέχουν πιο ομαλά.",
     },
     {
       title: language === "en" ? "Full Stack Developer" : "Full Stack Developer",
       company: language === "en" ? "Self-employed" : "Αυτοαπασχολούμενος",
-      period: language === "en" ? "11/2023 - 11/2024" : "11/2023 - 11/2024",
+      period: language === "en" ? "11/2023 - Present" : "11/2023 - Παρόν",
       description:
         language === "en"
-          ? "Worked on various personal projects to hone skills after completing the Coding Factory boot camp at Athens University of Economics and Business."
-          : "Εργάστηκα σε διάφορα προσωπικά projects για να βελτιώσω τις δεξιότητές μου μετά την ολοκλήρωση του boot camp Coding Factory στο Οικονομικό Πανεπιστήμιο Αθηνών.",
+          ? "Creating custom web solutions for clients—from e-commerce stores to marketplace platforms and portfolios. I handle the whole journey: design, development, and launch. It's all about bringing ideas to life."
+          : "Δημιουργία custom web λύσεων για πελάτες—από e-commerce καταστήματα μέχρι marketplace πλατφόρμες και portfolios. Διαχειρίζομαι όλο το ταξίδι: design, development και launch. Όλα γυρνούν γύρω από το να φέρουμε ιδέες στη ζωή.",
     },
   ]
 

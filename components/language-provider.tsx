@@ -16,7 +16,7 @@ const translations = {
     "hero.greeting": "Hi, I'm",
     "hero.role": "Front-End Developer",
     "hero.description":
-      "Turning ideas into digital reality.",
+      "Creating web experiences that people love to use.",
     "hero.contact": "Get in touch",
     "hero.work": "View my work",
 
@@ -24,11 +24,11 @@ const translations = {
     "about.title": "About Me",
     "about.subtitle": "Who I Am",
     "about.paragraph1":
-      "As a Front-End Developer, I specialize in building modern, scalable web applications using React, Next.js, Angular, and TypeScript. I focus on creating intuitive user experiences with clean, maintainable code and attention to performance and accessibility.",
+      "I'm a Front-End Developer with 2 years of experience building web applications that work. I love working with React, Angular, and Next.js to create experiences that look good and feel great to use.",
     "about.paragraph2":
-      "With experience spanning freelance projects and professional development roles, I've delivered custom web solutions for diverse clients and contributed to enterprise-level applications. My approach combines technical expertise with strong problem-solving skills and a keen eye for design.",
+      "From e-commerce stores to marketplace platforms and business tools, I've built a variety of projects. My goal? Deliver something that not only looks professional but actually solves your problem and helps your business grow.",
     "about.paragraph3":
-      "Currently working as a Front End Developer at CloudFin in Athens, Greece, where I develop and maintain complex user interfaces using Angular, collaborating with cross-functional teams to deliver high-quality solutions.",
+      "Right now, I'm developing web apps at CloudFin in Athens. I also work on freelance projects, so if you have an idea you want to bring to life—let's talk!",
 
     // Skills
     "skills.title": "My Skills",
@@ -48,7 +48,7 @@ const translations = {
     // Projects
     "projects.title": "My Projects",
     "projects.description":
-      "Here's a selection of my recent work. Each project represents different skills and challenges I've tackled.",
+      "Here's a selection of my recent work.",
     "projects.all": "All",
     "projects.webapp": "Web App",
     "projects.landing": "Landing Page",
@@ -89,7 +89,7 @@ const translations = {
     "hero.greeting": "Γεια, είμαι ο",
     "hero.role": "Front-End Developer",
     "hero.description":
-      "Μετατρέπω ιδέες σε ψηφιακή πραγματικότητα.",
+      "Δημιουργώ web εμπειρίες που οι άνθρωποι αγαπούν να χρησιμοποιούν.",
     "hero.contact": "Επικοινωνήστε",
     "hero.work": "Δείτε τη δουλειά μου",
 
@@ -97,11 +97,11 @@ const translations = {
     "about.title": "Σχετικά με εμένα",
     "about.subtitle": "Ποιος είμαι",
     "about.paragraph1":
-      "Ως Front-End Developer, ειδικεύομαι στην ανάπτυξη σύγχρονων, επεκτάσιμων web εφαρμογών χρησιμοποιώντας React, Next.js, Angular και TypeScript. Εστιάζω στη δημιουργία διαισθητικών εμπειριών χρήστη με καθαρό, συντηρήσιμο κώδικα και προσοχή στην απόδοση και την προσβασιμότητα.",
+      "Είμαι Front-End Developer με 2 χρόνια εμπειρίας στη δημιουργία web εφαρμογών που δουλεύουν. Λατρεύω να δουλεύω με React, Angular και Next.js για να φτιάχνω εμπειρίες που φαίνονται καλά και νιώθεις υπέροχα να τις χρησιμοποιείς.",
     "about.paragraph2":
-      "Με εμπειρία που εκτείνεται σε freelance projects και επαγγελματικούς ρόλους ανάπτυξης, έχω παραδώσει εξατομικευμένες web λύσεις για ποικίλους πελάτες και συνεισφέρει σε enterprise εφαρμογές. Η προσέγγισή μου συνδυάζει τεχνική εξειδίκευση με ισχυρές δεξιότητες επίλυσης προβλημάτων και έντονη αίσθηση σχεδιασμού.",
+      "Από e-commerce καταστήματα μέχρι marketplace πλατφόρμες και business tools, έχω φτιάξει ποικιλία projects. Ο στόχος μου; Να παραδώσω κάτι που όχι μόνο φαίνεται επαγγελματικό, αλλά λύνει το πρόβλημά σου και βοηθάει την επιχείρησή σου να μεγαλώσει.",
     "about.paragraph3":
-      "Αυτή τη στιγμή εργάζομαι ως Front End Developer στην CloudFin στην Αθήνα, όπου αναπτύσσω και συντηρώ σύνθετες διεπαφές χρήστη χρησιμοποιώντας Angular, συνεργαζόμενος με cross-functional ομάδες για την παράδοση υψηλής ποιότητας λύσεων.",
+      "Αυτή τη στιγμή αναπτύσσω web εφαρμογές στην CloudFin στην Αθήνα. Δουλεύω και σε freelance projects, οπότε αν έχεις μια ιδέα που θέλεις να γίνει πραγματικότητα—ας τα πούμε!",
 
     // Skills
     "skills.title": "Οι Δεξιότητές μου",
@@ -121,7 +121,7 @@ const translations = {
     // Projects
     "projects.title": "Τα Έργα μου",
     "projects.description":
-      "Εδώ είναι μια επιλογή από τις πρόσφατες εργασίες μου. Κάθε έργο αντιπροσωπεύει διαφορετικές δεξιότητες και προκλήσεις που έχω αντιμετωπίσει.",
+      "Εδώ είναι μια επιλογή από τις πρόσφατες εργασίες μου.",
     "projects.all": "Όλα",
     "projects.webapp": "Web Εφαρμογή",
     "projects.landing": "Landing Page",

@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Dimitris Palamidas | React Developer & Angular Developer | Front-End Developer Portfolio",
-  description: "Dimitris Palamidas - Experienced React Developer and Angular Developer specializing in modern web applications. Front-End Developer with expertise in TypeScript, Next.js, and responsive UI/UX design. Based in Athens, Greece.",
+  description: "Dimitris Palamidas - Front-End Developer turning ideas into beautiful web experiences. 2 years building modern websites, e-commerce platforms, and web applications with React, Angular, and Next.js. Based in Athens, Greece.",
   icons: {
     icon: '/logo-gray.png',
     shortcut: '/logo-gray.png',
@@ -32,7 +32,13 @@ export const metadata: Metadata = {
     "CloudFin Developer",
     "Greece Front-End Developer",
     "Dimitris Palamidas Portfolio",
-    "React Angular Developer"
+    "React Angular Developer",
+    "Telerik Kendo UI Developer",
+    "Supabase Developer",
+    "RxJS Developer",
+    "Angular Signals",
+    "RESTful API Integration",
+    "Enterprise Web Applications"
   ],
   authors: [{ name: "Dimitris Palamidas" }],
   creator: "Dimitris Palamidas",
@@ -48,7 +54,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Dimitris Palamidas | React & Angular Developer",
-    description: "Experienced React Developer and Angular Developer specializing in modern, scalable web applications. Expert in TypeScript, Next.js, and responsive design.",
+    description: "Front-End Developer turning ideas into beautiful web experiences. Building modern websites and applications with React, Angular, and Next.js.",
     url: 'https://dimitrispalamidas.com',
     siteName: 'Dimitris Palamidas Portfolio',
     images: [
@@ -65,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dimitris Palamidas | React & Angular Developer',
-    description: 'Experienced React Developer and Angular Developer specializing in modern web applications with TypeScript and Next.js.',
+    description: 'Turning ideas into beautiful web experiences. Front-End Developer working with React, Angular, and Next.js.',
     images: ['/dimitrispalamidas.jpg'],
   },
   robots: {
@@ -93,7 +99,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     "url": "https://dimitrispalamidas.com",
     "image": "https://dimitrispalamidas.com/dimitrispalamidas.jpg",
     "jobTitle": "Front-End Developer",
-    "description": "Experienced React Developer and Angular Developer specializing in modern web applications with TypeScript, Next.js, and responsive design.",
+    "description": "Front-End Developer turning ideas into beautiful web experiences. 2 years of experience with React, Angular, and Next.js.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Athens",
@@ -116,7 +122,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       "TailwindCSS",
       "HTML5",
       "CSS3",
-      "Responsive Design"
+      "Responsive Design",
+      "Telerik Kendo UI",
+      "Supabase",
+      "PostgreSQL",
+      "RxJS",
+      "Angular Signals",
+      "RESTful APIs",
+      "Git",
+      "GitHub",
+      "Agile"
     ],
     "sameAs": [
       "https://github.com/dimitrispalamidas",

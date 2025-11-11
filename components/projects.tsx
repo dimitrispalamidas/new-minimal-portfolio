@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { ExternalLink, Github } from "lucide-react"
@@ -9,38 +9,45 @@ import { Badge } from "@/components/ui/badge"
 import { useLanguage } from "./language-provider"
 
 export function Projects() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   const categories = [t("projects.all"), t("projects.webapp"), t("projects.landing"), t("projects.ecommerce")]
   const [activeCategory, setActiveCategory] = useState(t("projects.all"))
 
+  // Reset category when language changes
+  useEffect(() => {
+    setActiveCategory(t("projects.all"))
+  }, [language, t])
+
   const projects = [
     {
-      title: "Duolingo Clone",
-      description: "A responsive language learning web application.",
-      image: "/duolingo.png",
-      category: t("projects.webapp"),
-      tags: ["React", "Next.js", "Tailwind CSS"],
-      demoLink: "https://duolingo-clone-eight-omega.vercel.app/",
-      githubLink: "https://github.com/dimitrispalamidas/duolingo-clone",
+      title: "Kids E-Commerce Platform",
+      description: {
+        en: "A full-featured online store for children's clothing and footwear. Built with seamless payment processing, shipping integration, and an intuitive admin panel to manage everything.",
+        el: "Ένα ολοκληρωμένο ηλεκτρονικό κατάστημα για παιδικά ρούχα και παπούτσια. Διαθέτει εύκολες πληρωμές, ενσωμάτωση αποστολών και φιλικό admin panel για πλήρη διαχείριση.",
+      },
+      image: "/tinkerbell.png",
+      category: t("projects.ecommerce"),
+      tags: {
+        en: ["Next.js", "E-commerce", "Payment Gateway", "Admin Panel"],
+        el: ["Next.js", "E-shop", "Ηλεκτρονικές Πληρωμές", "Admin Panel"],
+      },
+      demoLink: "https://tinkerbell-e-shop.vercel.app/",
     },
     {
-      title: "Car Dealership Website",
-      description: "A car dealership website with admin panel and contact form.",
+      title: "Vehicle Marketplace",
+      description: {
+        en: "A sleek marketplace connecting car buyers and sellers. Features smart search filters, live inventory tracking, and an automated system to handle inquiries from international buyers.",
+        el: "Μια σύγχρονη marketplace πλατφόρμα που συνδέει αγοραστές και πωλητές αυτοκινήτων. Περιλαμβάνει έξυπνα φίλτρα αναζήτησης, real-time αποθέματα και αυτοματοποιημένες αιτήσεις ενδιαφέροντος.",
+      },
       image: "/autostylecars.png",
       category: t("projects.webapp"),
-      tags: ["React", "Next.js", "Tailwind CSS"],
+      tags: {
+        en: ["Next.js", "Marketplace", "Search", "Contact System"],
+        el: ["Next.js", "Marketplace", "Έξυπνη Αναζήτηση", "Σύστημα Επικοινωνίας"],
+      },
       demoLink: "https://car-website-coral-alpha.vercel.app/",
       githubLink: "https://github.com/dimitrispalamidas/v0-car-website-clone",
-    },
-    {
-      title: "Messenger App",
-      description: "A responsive live chat application.",
-      image: "/messenger.png",
-      category: t("projects.webapp"),
-      tags: ["React", "Next.js", "Tailwind CSS"],
-      demoLink: "https://messenger-clone-eight-ruddy.vercel.app/",
-      githubLink: "https://github.com/dimitrispalamidas/messenger-clone",
     },
   ]
 
@@ -88,7 +95,11 @@ export function Projects() {
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src={project.image || "/placeholder.svg"}
-                  alt={`${project.title} - React project by Dimitris Palamidas`}
+                  alt={
+                    language === "en"
+                      ? `${project.title} - Web project by Dimitris Palamidas`
+                      : `${project.title} - Web project από τον Dimitris Palamidas`
+                  }
                   width={800}
                   height={600}
                   className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
@@ -96,27 +107,31 @@ export function Projects() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description[language]}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag, tagIndex) => (
+                  {project.tags[language].map((tag, tagIndex) => (
                     <Badge key={tagIndex} variant="secondary">
                       {tag}
                     </Badge>
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <Button asChild variant="outline" size="sm" className="gap-2">
-                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4" />
-                      {t("projects.demo")}
-                    </a>
-                  </Button>
-                  <Button asChild variant="outline" size="sm" className="gap-2">
-                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                      <Github className="h-4 w-4" />
-                      {t("projects.code")}
-                    </a>
-                  </Button>
+                  {project.demoLink && project.demoLink !== "#" && (
+                    <Button asChild variant="outline" size="sm" className="gap-2">
+                      <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4" />
+                        {t("projects.demo")}
+                      </a>
+                    </Button>
+                  )}
+                  {project.githubLink && project.githubLink !== "#" && (
+                    <Button asChild variant="outline" size="sm" className="gap-2">
+                      <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4" />
+                        {t("projects.code")}
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </motion.div>
