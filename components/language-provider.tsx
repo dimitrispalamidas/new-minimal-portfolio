@@ -16,7 +16,7 @@ const translations = {
     "hero.greeting": "Hi, I'm",
     "hero.role": "Front-End Developer",
     "hero.description":
-      "Creating web experiences that people love to use.",
+      "Turning ideas into beautiful, functional web applications.",
     "hero.contact": "Get in touch",
     "hero.work": "View my work",
 
@@ -24,11 +24,11 @@ const translations = {
     "about.title": "About Me",
     "about.subtitle": "Who I Am",
     "about.paragraph1":
-      "I'm a Front-End Developer with 2 years of experience building web applications that work. I love working with React, Angular, and Next.js to create experiences that look good and feel great to use.",
+      "I'm a Front-End Developer with 2 years of experience building modern web applications. I love working with Angular, React, and Next.js to create experiences that look good and feel great to use.",
     "about.paragraph2":
-      "From e-commerce stores to marketplace platforms and business tools, I've built a variety of projects. My goal? Deliver something that not only looks professional but actually solves your problem and helps your business grow.",
+      "From e-commerce stores to marketplace platforms and enterprise applications, I've built a variety of projects. My goal? Deliver something that not only looks professional but actually solves your problem and helps your business grow.",
     "about.paragraph3":
-      "Right now, I'm developing web apps at CloudFin in Athens. I also work on freelance projects, so if you have an idea you want to bring to life—let's talk!",
+      "Currently, I'm a Front-End Developer at CloudFin in Athens, where I build enterprise web applications for financial services. I also take on freelance projects, so if you have an idea you want to bring to life—let's talk!",
 
     // Skills
     "skills.title": "My Skills",
@@ -89,7 +89,7 @@ const translations = {
     "hero.greeting": "Γεια, είμαι ο",
     "hero.role": "Front-End Developer",
     "hero.description":
-      "Δημιουργώ web εμπειρίες που οι άνθρωποι αγαπούν να χρησιμοποιούν.",
+      "Μετατρέπω ιδέες σε όμορφες και λειτουργικές web εφαρμογές.",
     "hero.contact": "Επικοινωνήστε",
     "hero.work": "Δείτε τη δουλειά μου",
 
@@ -97,11 +97,11 @@ const translations = {
     "about.title": "Σχετικά με εμένα",
     "about.subtitle": "Ποιος είμαι",
     "about.paragraph1":
-      "Είμαι Front-End Developer με 2 χρόνια εμπειρίας στη δημιουργία web εφαρμογών που δουλεύουν. Λατρεύω να δουλεύω με React, Angular και Next.js για να φτιάχνω εμπειρίες που φαίνονται καλά και νιώθεις υπέροχα να τις χρησιμοποιείς.",
+      "Είμαι Front-End Developer με 2 χρόνια εμπειρίας στη δημιουργία σύγχρονων web εφαρμογών. Λατρεύω να δουλεύω με Angular, React και Next.js για να φτιάχνω εμπειρίες που φαίνονται καλά και νιώθεις υπέροχα να τις χρησιμοποιείς.",
     "about.paragraph2":
-      "Από e-commerce καταστήματα μέχρι marketplace πλατφόρμες και business tools, έχω φτιάξει ποικιλία projects. Ο στόχος μου; Να παραδώσω κάτι που όχι μόνο φαίνεται επαγγελματικό, αλλά λύνει το πρόβλημά σου και βοηθάει την επιχείρησή σου να μεγαλώσει.",
+      "Από e-commerce καταστήματα μέχρι marketplace πλατφόρμες και enterprise εφαρμογές, έχω φτιάξει ποικιλία projects. Ο στόχος μου; Να παραδώσω κάτι που όχι μόνο φαίνεται επαγγελματικό, αλλά λύνει το πρόβλημά σου και βοηθάει την επιχείρησή σου να μεγαλώσει.",
     "about.paragraph3":
-      "Αυτή τη στιγμή αναπτύσσω web εφαρμογές στην CloudFin στην Αθήνα. Δουλεύω και σε freelance projects, οπότε αν έχεις μια ιδέα που θέλεις να γίνει πραγματικότητα—ας τα πούμε!",
+      "Αυτή τη στιγμή είμαι Front-End Developer στην CloudFin στην Αθήνα, όπου αναπτύσσω enterprise web εφαρμογές για χρηματοοικονομικές υπηρεσίες. Δουλεύω και σε freelance projects, οπότε αν έχεις μια ιδέα που θέλεις να γίνει πραγματικότητα—ας τα πούμε!",
 
     // Skills
     "skills.title": "Οι Δεξιότητές μου",

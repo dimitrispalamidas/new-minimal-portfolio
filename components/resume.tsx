@@ -15,8 +15,8 @@ export function Resume() {
       period: language === "en" ? "11/2024 - Present" : "11/2024 - Παρόν",
       description:
         language === "en"
-          ? "Building web applications for financial systems—creating features for purchase orders, invoicing, and document management. Working with an awesome team to deliver solutions that help businesses run smoother."
-          : "Δημιουργία web εφαρμογών για οικονομικά συστήματα—φτιάχνοντας features για παραγγελίες, τιμολόγηση και διαχείριση εγγράφων. Συνεργασία με μια υπέροχη ομάδα για να παραδίδουμε λύσεις που βοηθούν τις επιχειρήσεις να τρέχουν πιο ομαλά.",
+          ? "Building enterprise web applications for financial automation systems—working on AI-powered document management, financial workflows, and cloud-based solutions. Collaborating with an awesome team to deliver scalable solutions that help businesses streamline their operations."
+          : "Δημιουργία enterprise web εφαρμογών για συστήματα οικονομικής αυτοματοποίησης—δουλεύοντας σε AI-powered διαχείριση εγγράφων, financial workflows και cloud-based λύσεις. Συνεργασία με μια υπέροχη ομάδα για να παραδίδουμε scalable λύσεις που βοηθούν τις επιχειρήσεις να βελτιστοποιήσουν τις λειτουργίες τους.",
     },
     {
       title: language === "en" ? "Full Stack Developer" : "Full Stack Developer",
