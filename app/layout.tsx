@@ -5,6 +5,7 @@ import { LanguageProvider } from "@/components/language-provider"
 import { ReactNode } from "react"
 import { Toaster } from "@/components/ui/toaster"
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 // import { GoogleAnalytics } from "./google-analytics" // Uncomment when you get your GA ID
 
 const inter = Inter({ subsets: ["latin"] })
@@ -161,6 +162,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Toaster />
           </LanguageProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
