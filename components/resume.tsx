@@ -10,13 +10,22 @@ export function Resume() {
 
   const experiences = [
     {
-      title: language === "en" ? "Front End Developer" : "Front End Developer",
+      title: language === "en" ? "Full Stack & AI Engineer" : "Full Stack & AI Engineer",
       company: "CloudFin",
-      period: language === "en" ? "11/2024 - Present" : "11/2024 - Παρόν",
+      period: language === "en" ? "12/2025 - Present" : "12/2025 - Παρόν",
       description:
         language === "en"
-          ? "Building enterprise web applications for financial automation systems—working on AI-powered document management, financial workflows, and cloud-based solutions. Collaborating with an awesome team to deliver scalable solutions that help businesses streamline their operations."
-          : "Δημιουργία enterprise web εφαρμογών για συστήματα οικονομικής αυτοματοποίησης—δουλεύοντας σε AI-powered διαχείριση εγγράφων, financial workflows και cloud-based λύσεις. Συνεργασία με μια υπέροχη ομάδα για να παραδίδουμε scalable λύσεις που βοηθούν τις επιχειρήσεις να βελτιστοποιήσουν τις λειτουργίες τους.",
+          ? "Designing production Vision-to-Data pipelines with Vertex AI and LLM workflows. Building Python/FastAPI services for asynchronous document processing and React validation interfaces for human-in-the-loop quality control."
+          : "Σχεδιάζω production Vision-to-Data pipelines με Vertex AI και LLM workflows. Αναπτύσσω Python/FastAPI services για ασύγχρονη επεξεργασία εγγράφων και React interfaces για human-in-the-loop έλεγχο ποιότητας.",
+    },
+    {
+      title: language === "en" ? "Front End Developer" : "Front End Developer",
+      company: "CloudFin",
+      period: language === "en" ? "11/2024 - 12/2025" : "11/2024 - 12/2025",
+      description:
+        language === "en"
+          ? "Built enterprise Angular applications with Telerik Kendo UI for B2B financial systems, delivering document workflows, data-heavy grids, and reliable API integrations in Agile product teams."
+          : "Ανέπτυξα enterprise Angular εφαρμογές με Telerik Kendo UI για B2B financial συστήματα, υλοποιώντας document workflows, σύνθετα data grids και αξιόπιστα API integrations σε Agile ομάδες προϊόντος.",
     },
     {
       title: language === "en" ? "Full Stack Developer" : "Full Stack Developer",
@@ -24,8 +33,8 @@ export function Resume() {
       period: language === "en" ? "11/2023 - Present" : "11/2023 - Παρόν",
       description:
         language === "en"
-          ? "Creating custom web solutions for clients—from e-commerce stores to marketplace platforms and portfolios. I handle the whole journey: design, development, and launch. It's all about bringing ideas to life."
-          : "Δημιουργία custom web λύσεων για πελάτες—από e-commerce καταστήματα μέχρι marketplace πλατφόρμες και portfolios. Διαχειρίζομαι όλο το ταξίδι: design, development και launch. Όλα γυρνούν γύρω από το να φέρουμε ιδέες στη ζωή.",
+          ? "Delivering freelance products end-to-end, including SaaS, marketplaces, and e-commerce platforms with Next.js, Supabase, and automation-first workflows tailored to each business."
+          : "Παραδίδω freelance προϊόντα end-to-end, όπως SaaS, marketplaces και e-commerce πλατφόρμες με Next.js, Supabase και automation-first λογική προσαρμοσμένη σε κάθε επιχείρηση.",
     },
   ]
 
@@ -68,7 +77,7 @@ export function Resume() {
           <div className="h-1 w-20 bg-gray-200 dark:bg-gray-700 mx-auto mb-8"></div>
           <p className="text-gray-600 dark:text-gray-300 mb-8">{t("resume.description")}</p>
           <Button asChild className="rounded-full gap-2">
-            <a href="/files/dimitris-palamidas-resume.pdf" download>
+            <a href="/files/Dimitris_Palamidas_Full_Stack_AI_Engineer.pdf" download="Dimitris_Palamidas_Full_Stack_AI_Engineer.pdf">
               <Download className="h-4 w-4" />
               {t("resume.download")}
             </a>

@@ -1,49 +1,45 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
-import { Code, Palette, Smartphone, Zap, Plug, Layout } from "lucide-react"
+import { Code, Palette, Bot, Zap, Database, BrainCircuit, DatabaseZap } from "lucide-react"
 import {
   SiAngular,
+  SiFastapi,
+  SiGooglecloud,
   SiReact,
   SiNextdotjs,
-  SiTypescript,
-  SiJavascript,
-  SiHtml5,
-  SiCss3,
-  SiTailwindcss,
-  SiPostgresql,
+  SiPython,
+  SiDocker,
+  SiVercel,
   SiSupabase,
   SiGithub,
 } from "react-icons/si"
+import { DiMsqlServer } from "react-icons/di"
 import { useLanguage } from "./language-provider"
 
 type Skill = {
   name: string
   color: string
   icon?: React.ReactNode
-  customImage?: string
 }
 
 export function Skills() {
   const { t } = useLanguage()
 
   const skills: Skill[] = [
-    { name: "Angular", icon: <SiAngular className="h-6 w-6" />, color: "#DD0031" },
     { name: "React.js", icon: <SiReact className="h-6 w-6" />, color: "#61DAFB" },
     { name: "Next.js", icon: <SiNextdotjs className="h-6 w-6" />, color: "#000000" },
-    { name: "TypeScript", icon: <SiTypescript className="h-6 w-6" />, color: "#3178C6" },
-    { name: "JavaScript", icon: <SiJavascript className="h-6 w-6" />, color: "#F7DF1E" },
-    { name: "HTML5", icon: <SiHtml5 className="h-6 w-6" />, color: "#E34F26" },
-    { name: "CSS", icon: <SiCss3 className="h-6 w-6" />, color: "#1572B6" },
-    { name: "TailwindCSS", icon: <SiTailwindcss className="h-6 w-6" />, color: "#06B6D4" },
-    { name: "Telerik Kendo UI", customImage: "/kendo.png", color: "#FF6358" },
-    { name: "React Native", icon: <SiReact className="h-6 w-6" />, color: "#61DAFB" },
+    { name: "Angular", icon: <SiAngular className="h-6 w-6" />, color: "#DD0031" },
+    { name: "Python", icon: <SiPython className="h-6 w-6" />, color: "#3776AB" },
+    { name: "FastAPI", icon: <SiFastapi className="h-6 w-6" />, color: "#009688" },
+    { name: "Vertex AI", icon: <SiGooglecloud className="h-6 w-6" />, color: "#4285F4" },
+    { name: "LLM Models", icon: <BrainCircuit className="h-5 w-5" />, color: "#7C3AED" },
+    { name: "RAG Systems", icon: <DatabaseZap className="h-5 w-5" />, color: "#0EA5A6" },
+    { name: "SQL Server", icon: <DiMsqlServer className="h-6 w-6" />, color: "#CC2927" },
     { name: "Supabase", icon: <SiSupabase className="h-6 w-6" />, color: "#3ECF8E" },
-    { name: "PostgreSQL", icon: <SiPostgresql className="h-6 w-6" />, color: "#4169E1" },
+    { name: "Vercel", icon: <SiVercel className="h-6 w-6" />, color: "#000000" },
+    { name: "Docker", icon: <SiDocker className="h-6 w-6" />, color: "#2496ED" },
     { name: "Git & GitHub", icon: <SiGithub className="h-6 w-6" />, color: "#181717" },
-    { name: "RESTful APIs", icon: <Plug className="h-5 w-5" />, color: "#6B7280" },
-    { name: "Responsive Design", icon: <Layout className="h-5 w-5" />, color: "#6B7280" },
   ]
 
   const categories = [
@@ -53,19 +49,19 @@ export function Skills() {
       icon: <Code className="h-10 w-10" />,
     },
     {
-      title: t("skills.uiux"),
-      description: t("skills.uiux.desc"),
-      icon: <Palette className="h-10 w-10" />,
+      title: t("skills.fullstack"),
+      description: t("skills.fullstack.desc"),
+      icon: <Zap className="h-10 w-10" />,
     },
     {
       title: t("skills.mobile"),
       description: t("skills.mobile.desc"),
-      icon: <Smartphone className="h-10 w-10" />,
+      icon: <Bot className="h-10 w-10" />,
     },
     {
-      title: t("skills.fullstack"),
-      description: t("skills.fullstack.desc"),
-      icon: <Zap className="h-10 w-10" />,
+      title: t("skills.uiux"),
+      description: t("skills.uiux.desc"),
+      icon: <Palette className="h-10 w-10" />,
     },
   ]
 
@@ -112,23 +108,21 @@ export function Skills() {
               className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all duration-300 group"
             >
               <div className="flex flex-col items-center justify-center gap-3">
-                {skill.customImage ? (
-                  <div className="transition-transform duration-300 group-hover:scale-110">
-                    <Image src={skill.customImage} alt={skill.name} width={24} height={24} className="w-6 h-6" />
-                  </div>
-                ) : (
-                  <div
-                    style={{
-                      color:
-                        skill.name === "Next.js" || skill.name === "Git & GitHub" ? undefined : skill.color,
-                    }}
-                    className={`transition-transform duration-300 group-hover:scale-110 ${
-                      skill.name === "Next.js" || skill.name === "Git & GitHub" ? "text-black dark:text-white" : ""
-                    }`}
-                  >
-                    {skill.icon}
-                  </div>
-                )}
+                <div
+                  style={{
+                    color:
+                      skill.name === "Next.js" || skill.name === "Git & GitHub" || skill.name === "Vercel"
+                        ? undefined
+                        : skill.color,
+                  }}
+                  className={`transition-transform duration-300 group-hover:scale-110 ${
+                    skill.name === "Next.js" || skill.name === "Git & GitHub" || skill.name === "Vercel"
+                      ? "text-black dark:text-white"
+                      : ""
+                  }`}
+                >
+                  {skill.icon}
+                </div>
                 <span className="text-sm font-medium text-gray-900 dark:text-white text-center">
                   {skill.name}
                 </span>
